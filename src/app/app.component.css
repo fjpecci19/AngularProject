@@ -1,0 +1,14 @@
+.button{
+    width: 50%;
+    height: 5vh;
+    color: black;
+    background-color: yellow;
+}
+
+img{
+    width: 100%;
+}
+
+.card{
+    margin-bottom: 10px;
+}
