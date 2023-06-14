@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   lista = [
     {visibility: true, title: 'Perro encontrado', image: "https://c4.wallpaperflare.com/wallpaper/816/552/980/animales-labrados-perro-wallpaper-preview.jpg", ult: "01/04/23", des: "Perro encontrado en Barrio San Isidro", contacto: "0987123412", pais: "Paraguay", ciudad: "Asunción"},
