@@ -3,7 +3,19 @@ h2{
     font-size: 20px;
 }
 
+label{
+    font-size: 15px;
+
+}
+
 input{
     width: 100px;
-    margin-left: 10px;
+    border: solid black;
+}
+
+button{
+    width: 108px;
+    border: solid black;
+    background-color: red;
+    color: white;
 }
