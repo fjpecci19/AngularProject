@@ -1,0 +1,17 @@
+<app-servers *ngFor = "let titulo of titulos" titulo = "titulo"></app-servers>
+
+<h2>Form 1</h2>
+<input type="text" [(ngModel)] = "reporte">
+<p>{{reporte}}</p>
+
+<h2>Form 2</h2>
+<form #myform= "ngForm" (ngSubmit) = "submitForm(myform)">
+    <div>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name= "titulo" [(ngModel)] ="formData.title" required maxlength="13">
+        <div *ngIf = "myform.controls.title.invalid && (myform.controls.title.dirty || myform.controls.title.touched)">
+            <div *ngIf = "myform.controls.title.errors.required">El nombre es requerido</div>
+            <div *ngIf = "myform.controls.title.errors.maxlength">El máximo de caracteres es de 13</div>
+        </div>
+    </div>
+</form>

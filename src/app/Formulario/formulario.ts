@@ -18,6 +18,8 @@ export class Formulario implements OnInit{
         pais: "",
     }
     
+    titulos: string[] = ['Server1', 'server2', 'sernver4', 'serverN']
+
     reporte = ""
 
     ngOnInit(){
