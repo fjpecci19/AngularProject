@@ -1,19 +1,4 @@
-<div *ngFor="let item of lista">
-  <div class="card" style="max-width: 60%; border: solid black;">
-    <div class="row g-0">
-      <div class="col-md-2">
-        <img src={{item.image}} class="img-fluid rounded-start">
-      </div>
-      <div class="col-md-2">
-        <div class="card-body">
-          <h2 class="card-title">{{item.title}}</h2>
-          <p class="card-text">Últ. vez visto el {{item.ult}}</p>
-          <p class="card-text">{{item.des}}</p>
-          <p class="card-text">Contacto: {{item.contacto}}</p>
-          <p class="card-text">{{item.ciudad}}, {{item.pais}}</p>
-          <button class="button">Ver reporte completo</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<formulario></formulario>
+
+<card *ngFor="let item of lista" [item]="item"></card>
+

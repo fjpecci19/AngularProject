@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core'
 import { NgForm } from '@angular/forms'
 
 @Component({
-    selector: 'app-servers',
+    selector: 'formulario',
     templateUrl: './formulario.html',
     styleUrls: ["./formulario.css"]
 })
@@ -32,8 +32,10 @@ export class Formulario implements OnInit{
 
     submitForm(form: NgForm){
         if (form.valid){
+            alert("Formulario válido")
             console.log("Formulario válido")
         }else{
+            alert("Formulario inválido")
             console.log("Formulario inválido")
         }
     }
