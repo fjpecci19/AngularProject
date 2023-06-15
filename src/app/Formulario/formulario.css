@@ -9,13 +9,15 @@ label{
 }
 
 input{
-    width: 100px;
-    border: solid black;
+    width: 749px;
 }
 
 button{
-    width: 108px;
-    border: solid black;
+    width: 755px;
     background-color: red;
     color: white;
+}
+
+.button-date{
+    width: 752px;
 }

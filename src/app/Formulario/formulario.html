@@ -10,7 +10,7 @@
     </div><br>
     <div>
         <label for="ult">Última vez visto</label><br>
-        <input type="date" id="ult" name= "ult" [(ngModel)] ="formData.ult">
+        <input class="button-date" type="date" id="ult" name= "ult" [(ngModel)] ="formData.ult">
         <div *ngIf = "myform.controls['ult'].invalid && (myform.controls['ult'].dirty || myform.controls['ult'].touched)"></div>
     </div><br>
     <div>
